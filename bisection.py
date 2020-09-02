@@ -7,7 +7,7 @@ print("Function : f(x)=x^4 -x -3\n")
 
 left_value = float(input("Enter start point of interval : "))
 right_value = float(input("Enter end point of interval   : "))
-
+approximation = int(input("Approximation : "))
 def function(x):
 	return x**4-x-3
 
@@ -25,7 +25,7 @@ print("-"*90)
 
 mid=(left_value+right_value)/2.0
 
-while(count+1 <= 5):
+while(count+1 <= approximation):
 	mid=(left_value+right_value)/2.0
 
 	count=count+1
