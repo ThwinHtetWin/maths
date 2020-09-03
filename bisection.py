@@ -1,15 +1,16 @@
-from sympy import *
-
 #to solve 2nd year CS-04 
-
+#no2 question : x**4 -x -3
+#no3 question : x**2 -2*x -2
+#substitute those on line 13
 print("Finding the nth approximation to the solution of the equation using BISECTION method : \n")
-print("Function : f(x)=x^4 -x -3\n")
+print("Function : f(x)=x**4 -x -3\n")
 
+#equation=equation.subs(x,x)
 left_value = float(input("Enter start point of interval : "))
 right_value = float(input("Enter end point of interval   : "))
 approximation = int(input("Approximation : "))
 def function(x):
-	return x**4-x-3
+	return x**2 -2*x -2
 
 print(f"\nLeft value  : {function(left_value)}")
 print(f"Right value : {function(right_value)}")
@@ -36,5 +37,5 @@ while(count+1 <= approximation):
 	else:
 		left_value=mid
 
-print(f"\nRoot : {mid}\nf(x)={function(mid)}\n")
+print(f"\nf(x)={function(mid)}\n")
 print("#"*30)	
